@@ -1,0 +1,74 @@
+.Wrap {
+  position: relative;
+  background: #18191d;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.inner_arr {
+  width: 1200px;
+  margin: 0 auto;
+}
+.pa-50 {
+  padding: 50px 0;
+}
+
+.sec {
+  padding: 100px 0;
+}
+
+.ul_flex {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.vi_tit {
+}
+.vi_tit h2 {
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  background: #f0e0a2;
+  background: linear-gradient(to top, #f0e0a2 0%, #b59975 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 10px 10px 15px rgba(255, 255, 255, 0.3);
+}
+.vi_tit p {
+  font-size: 25px;
+  font-weight: 500;
+  text-shadow: 0 0 5px #000000;
+}
+
+.top_btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.top_btn.on {
+  visibility: visible;
+  opacity: 1;
+}
+
+.top_btn a {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid #dcbe96;
+  border-radius: 50%;
+
+  transition: 0.4s;
+}
+.top_btn a:hover {
+  background: #dcbe9650;
+}

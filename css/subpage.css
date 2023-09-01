@@ -1,0 +1,151 @@
+.top_banner,
+.header {
+  background: #18191d;
+}
+
+.subpage_visual {
+  padding-top: 100px;
+  height: 400px;
+  background: url(../img/sub_visual01.jpg) no-repeat center center/cover;
+}
+.subpage_visual .inner {
+  position: relative;
+  height: 100%;
+}
+.subpage_visual .inner .sp-tit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+.subpage_visual .inner .sp-tit h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.subpage_visual .inner .sp-tit p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form_sec .inner {
+  padding: 50px;
+
+  border: 1px solid;
+  border-image: linear-gradient(0deg, #f0e0a2 0%, #b59975 100%);
+  border-image-slice: 1;
+}
+
+.form_sec .inner .charge_in {
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  padding: 30px;
+
+  background: #dcbe9607;
+  margin: 0 0 30px 0;
+}
+.form_sec .inner .charge_in label {
+  display: inline-block;
+  width: 100px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.form_sec .inner .charge_in select {
+  cursor: pointer;
+}
+
+.form_sec .inner .charge_in select option {
+  display: block;
+  background: #18191d;
+}
+.form_sec .inner .charge_in select option:checked {
+  color: #dcbe96;
+}
+
+.form_sec .inner .charge_in select,
+.form_sec .inner .charge_in input {
+  width: 400px;
+
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px;
+  border-bottom: 1px solid #dcbe9630;
+}
+
+.form_sec .inner .charge_in select:focus,
+.form_sec .inner .charge_in input:focus {
+  border-bottom: 1px solid #dcbe96;
+}
+
+.form_sec .inner .charge_in.ch_money,
+.form_sec .inner .charge_in.ch_bank {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_sec .inner .charge_in .charge_money_btn {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.form_sec .inner .charge_in .charge_money_btn button {
+  border: 1px solid #dcbe9630;
+  padding: 10px 20px;
+  transition: 0.4s;
+}
+
+.form_sec .inner .charge_in .charge_money_btn button:hover {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  background: #dcbe96;
+}
+
+.form_sec .inner .charge_in .charge_money_btn .clear {
+  background: #e22e2e;
+}
+
+.form_sec .inner .charge_in .charge_money_btn .clear:hover {
+  background: #e22e2e;
+}
+
+.form_sec .inner .charge_in .charge_money_btn button ~ button {
+  margin-left: 10px;
+}
+.form_sec .inner .charge_in.ch_comment textarea {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.35;
+  color: #c1c1c1;
+
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  border: 1px solid #dcbe9630;
+
+  overflow: hidden;
+}
+.form_sec .inner .ch_req_btn {
+  text-align: center;
+}
+
+.form_sec .inner .ch_req_btn button {
+  display: inline-block;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  margin-top: 20px;
+  padding: 30px;
+  width: 300px;
+  border: 1px solid #dcbe96;
+  transition: 0.4s;
+}
+
+.form_sec .inner .ch_req_btn button:hover {
+  background: #dcbe96;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,93 @@
+.mainVisual {
+  position: relative;
+}
+.mainVisual .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainVisual .slide {
+  position: relative;
+  background: url(../img/mainVisual02.jpg) no-repeat center center/cover;
+  height: 700px;
+  width: 100%;
+}
+.mainVisual .slide .visual_sl {
+  height: 700px;
+  width: 100%;
+}
+.mainVisual .slide .visual_sl .vi_tit {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.mainVisual .slide .sl_itm01::before {
+  content: "";
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  width: 700px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  background: url(../img/main_v_casino.png) no-repeat center center/contain;
+  z-index: 998;
+}
+.mainVisual .slide .sl_itm02::before {
+  content: "";
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  width: 700px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  background: url(../img/main_v_slot.png) no-repeat center center/contain;
+  z-index: 998;
+}
+
+.mainVisual .slide .slick-dots {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 85%);
+}
+
+.mainVisual .slide .slick-dots > li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 20px;
+  border: 1px solid #dcbe96;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mainVisual .slide .slick-dots li.slick-active:after {
+  content: "";
+
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #dcbe96;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.mainVisual .slide .slick-active .inner h2,
+.mainVisual .slide .slick-active .inner p {
+  visibility: visible;
+  transition: 3.5s;
+}
+
+.mainVisual .slide .slick-dots > li button {
+  display: none;
+}
