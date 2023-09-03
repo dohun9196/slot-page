@@ -1,18 +1,36 @@
 .Wrap {
   position: relative;
-  background: #18191d;
+  background: #0b0b0b;
 }
 
 .inner {
   width: 1200px;
   margin: 0 auto;
 }
+
 .inner_arr {
   width: 1200px;
   margin: 0 auto;
 }
+
+.no-pa {
+  padding: 50px 0 10px 0;
+}
+
 .pa-50 {
   padding: 50px 0;
+}
+
+.pa-30 {
+  padding: 30px 0;
+}
+
+.pa-a30 {
+  padding: 30px;
+}
+
+.bt-50 {
+  padding-bottom: 50px;
 }
 
 .sec {
@@ -24,8 +42,9 @@
   gap: 30px;
   align-items: center;
 }
-.vi_tit {
-}
+
+.vi_tit {}
+
 .vi_tit h2 {
   font-size: 70px;
   font-weight: 900;
@@ -34,8 +53,9 @@
   background: linear-gradient(to top, #f0e0a2 0%, #b59975 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 10px 10px 15px rgba(255, 255, 255, 0.3);
+  text-shadow: 5px 0px 10px rgba(240, 224, 162, 0.5)
 }
+
 .vi_tit p {
   font-size: 25px;
   font-weight: 500;
@@ -49,6 +69,40 @@
   visibility: hidden;
   opacity: 0;
   transition: 0.4s;
+}
+
+.g_tit {
+  margin-bottom: 30px;
+}
+
+.g_tit h2 {
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+
+  margin: 0 auto;
+}
+
+.g_tit h2::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -20px;
+  width: 10px;
+  height: 100%;
+  background: #dcbe96;
+}
+
+.g_tit h2::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: -20px;
+  width: 10px;
+  height: 100%;
+  background: #dcbe96;
 }
 
 .top_btn.on {
@@ -69,6 +123,61 @@
 
   transition: 0.4s;
 }
+
 .top_btn a:hover {
   background: #dcbe9650;
+}
+
+.re_btn {
+  padding: 10px;
+  width: 100px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.all_wr_btn,
+.all_btn {
+  border: 1px solid #dcbe96;
+  color: #dcbe96;
+}
+
+.all_wr_btn:hover,
+.all_btn.on,
+.all_btn:hover {
+  background: #dcbe96;
+  color: #fcfcfc;
+}
+
+.sel_del_btn2,
+.all_del_btn,
+.win_btn {
+  border: 1px solid #1782FF;
+  color: #1782FF;
+}
+
+.sel_del_btn2:hover,
+.all_del_btn:hover,
+.win_btn.on,
+.win_btn:hover {
+  background: #1782FF;
+  color: #fcfcfc;
+}
+
+.wri_btn,
+.sel_del_btn,
+.lose_btn {
+  border: 1px solid #FF5733;
+  color: #FF5733;
+}
+
+.wri_btn:hover,
+.sel_del_btn:hover,
+.lose_btn.on,
+.lose_btn:hover {
+  background: #FF5733;
+  color: #fcfcfc;
+}
+
+.li_odd {
+  background: #dcbe96;
 }

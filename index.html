@@ -1,118 +1,243 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>slot-html</title>
-    <link rel="stylesheet" href="./css/asset.css" />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
 
-    <script
-      src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-      crossorigin="anonymous"
-    ></script>
-    <!-- slick -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>slot-html</title>
+  <link rel="stylesheet" href="./css/asset.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
 
-    <script src="./js/main.js"></script>
-  </head>
-  <body>
-    <div class="Wrap">
-      <div class="top_banner">
-        <div class="inner ellipsis">
-          <div class="rolling_bar">
-            <ul>
-              <li class="rol_li">
-                "충전과 환전시 정확한 정보를 입력하셔야 됩니다."
-              </li>
-              <li class="rol_li">
-                "은행 점검시간 23:50 ~ 00:10 까지 출금신청및 환전신청이
-                불가능합니다."
-              </li>
-              <li class="rol_li">
-                "게임 이용 시 불편함이 있으시면 고객센터로 문의 바랍니다."
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- header -->
-      <header class="header">
-        <div class="inner">
-          <h1 class="logo">
-            <a href="/">
-              <!-- <img src="" alt="" /> -->
-              CASINO
-            </a>
-          </h1>
-          <nav class="gnb">
-            <ul class="menu ul_flex">
-              <li><a href="./subpage/charge.html">충전신청</a></li>
-              <li><a href="./subpage/exchange.html">환전신청</a></li>
-              <li><a href="">배팅기록</a></li>
-              <li><a href="">쪽지</a></li>
-              <li><a href="">공지사항</a></li>
-              <li><a href="">고객센터</a></li>
-              <li><a href="">마이페이지</a></li>
-            </ul>
-            <ul class="log ul_flex">
-              <li><a href="">LOG IN</a></li>
-              <li><a href="">SING UP</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <!-- main -->
-      <main>
-        <section class="mainVisual">
-          <div class="slide">
-            <figure class="sl_itm01 visual_sl">
-              <div class="inner vi_tit">
-                <h2>LIVE CASINO</h2>
-                <p>다양한 실시간 카지노 게임을 즐겨보세요</p>
-              </div>
-            </figure>
-            <figure class="sl_itm02 visual_sl">
-              <div class="inner vi_tit">
-                <h2>SLOT GAMES</h2>
-                <p>다양한 슬롯 게임을 즐겨보세요</p>
-              </div>
-            </figure>
-          </div>
-        </section>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-        <!-- link -->
-        <aside>
-          <div class="game_link_bar">
-            <div class="casino_link">CASINO</div>
-            <div class="slot_link">SLOT</div>
-          </div>
-        </aside>
-      </main>
-      <!-- footer -->
-      <footer class="footer">
-        <div class="inner">
-          <div class="f_logo">
-            <figure><img src="./img/GAME/ETC/footer_Logo.png" alt="" /></figure>
-          </div>
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="Wrap">
+    <div class="top_banner">
+      <div class="inner ellipsis">
+        <div class="rolling_bar">
+          <ul>
+            <li class="rol_li">
+              "충전과 환전시 정확한 정보를 입력하셔야 됩니다."
+            </li>
+            <li class="rol_li">
+              "은행 점검시간 23:50 ~ 00:10 까지 출금신청 및 환전신청이
+              불가능합니다."
+            </li>
+            <li class="rol_li">
+              "게임 이용 시 불편함이 있으시면 고객센터로 문의 바랍니다."
+            </li>
+          </ul>
         </div>
-      </footer>
-      <div class="top_btn">
-        <a href="javascript:void(0)">UP</a>
       </div>
     </div>
-  </body>
+    <!-- header -->
+    <header class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="/">
+            <!-- <img src="" alt="" /> -->
+            CASINO
+          </a>
+        </h1>
+        <nav class="gnb">
+          <ul class="menu ul_flex">
+            <li><a href="">카지노</a></li>
+            <li><a href="">슬롯</a></li>
+            <li><a href="./subpage/charge.html">충전신청</a></li>
+            <li><a href="./subpage/exchange.html">환전신청</a></li>
+            <li><a href="./subpage/record.html">배팅기록</a></li>
+            <li><a href="./subpage/note.html">쪽지</a></li>
+            <li><a href="./subpage/notice.html">공지사항</a></li>
+            <li><a href="./subpage/customr.html">고객센터</a></li>
+            <li><a href="./subpage/mypage.html">마이페이지</a></li>
+          </ul>
+          <ul class="log ul_flex">
+            <li><a href="">LOG IN</a></li>
+            <li><a href="">SING UP</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <section class="mainVisual">
+        <div class="slide">
+          <figure class="sl_itm01 visual_sl">
+            <div class="inner vi_tit">
+              <h2>LIVE CASINO</h2>
+              <p>다양한 실시간 카지노 게임을 즐겨보세요</p>
+            </div>
+          </figure>
+          <figure class="sl_itm02 visual_sl">
+            <div class="inner vi_tit">
+              <h2>SLOT GAMES</h2>
+              <p>다양한 슬롯 게임을 즐겨보세요</p>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- link -->
+      <section class="gameLink sec">
+        <div class="inner">
+          <div class="g_tit">
+            <h2>PLAY GAME</h2>
+          </div>
+          <div class="fl_game">
+            <div class="casino_link g_lik">
+              <div class="lik_desc">
+                <span>LIVE CASINO</span>
+              </div>
+            </div>
+            <div class="slot_link g_lik">
+              <div class="lik_desc">
+                <span>SLOT GAMES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mainCustomer sec">
+        <div class="inner cus_fl">
+          <div class="cus_notice cus_itm">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="3">
+                    <div class="cus_header">
+                      <span>공지사항</span>
+                      <a href="./subpage/notice.html">전체보기</a>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td><a href="javascript:void(0)"><em>[공지사항]</em> 충전, 환전 규정</a></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td><a href="javascript:void(0)"><em>[공지사항]</em> 카지노 이용 규정</a></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td><a href="javascript:void(0)"><em>[공지사항]</em> 슬롯 이용 규정</a></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td><a href="javascript:void(0)"><em>[공지사항]</em> 배팅 규정</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cus_charge cus_itm">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="3">
+                    <div class="cus_header">
+                      <span>실시간 입금 현황</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td>user7**</td>
+                  <td><em>300,000원</em></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td>user01**</td>
+                  <td><em>100,000원</em></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td>user00**</td>
+                  <td><em>400,000원</em></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td>user30**</td>
+                  <td><em>300,000원</em></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td>user4**</td>
+                  <td><em>200,000원</em></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cus_exchange cus_itm">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="3">
+                    <div class="cus_header">
+                      <span>실시간 환전 현황</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td>user01**</td>
+                  <td><em>300,000원</em></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td>user5**</td>
+                  <td><em>500,000원</em></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td>user00**</td>
+                  <td><em>900,000원</em></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td>user4**</td>
+                  <td><em>1,300,000원</em></td>
+                </tr>
+                <tr>
+                  <td>2023-09-01 01:00</td>
+                  <td>user9**</td>
+                  <td><em>150,000원</em></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="inner">
+        <div class="f_logo">
+          <figure><img src="./img/GAME/ETC/footer_Logo.png" alt="" /></figure>
+        </div>
+      </div>
+    </footer>
+    <div class="top_btn">
+      <a href="javascript:void(0)">UP</a>
+    </div>
+  </div>
+</body>
+
 </html>

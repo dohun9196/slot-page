@@ -24,7 +24,7 @@ $(function () {
   // to_top 버튼
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    if (scrollTop > 500) {
+    if (scrollTop > 400) {
       $(".top_btn").addClass("on");
     } else {
       $(".top_btn").removeClass("on");

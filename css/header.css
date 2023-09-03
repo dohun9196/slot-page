@@ -15,15 +15,18 @@
   line-height: 30px;
   text-align: center;
 }
+
 .top_banner .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .top_banner .inner .rolling_bar {
   /*   display: inline-block; */
   animation: text-scroll 35s linear infinite;
 }
+
 @keyframes text-scroll {
   from {
     transform: translateX(20%);
@@ -32,6 +35,7 @@
     -o-transform: translateX(20%);
     -ms-transform: translateX(20%);
   }
+
   to {
     transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -81,6 +85,7 @@
   border: 1px solid #dcbe96;
   background: #dcbe9630;
 }
+
 .header .inner .logo a::before {
   content: "";
   position: absolute;
@@ -99,18 +104,20 @@
   justify-content: space-between;
 }
 
-.header .inner .gnb > .menu > li > a {
+.header .inner .gnb>.menu>li>a {
   position: relative;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   transition: 0.4s;
 }
-.header .inner .gnb > .menu > li > a.active,
-.header .inner .gnb > .menu > li > a:hover {
+
+.header .inner .gnb>.menu>li>a.active,
+.header .inner .gnb>.menu>li>a:hover {
   color: #dcbe96;
 }
-.header .inner .gnb > .menu > li > a.active::before,
-.header .inner .gnb > .menu > li > a::before {
+
+.header .inner .gnb>.menu>li>a.active::before,
+.header .inner .gnb>.menu>li>a::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -122,8 +129,9 @@
   opacity: 0;
   transition: 0.4s;
 }
-.header .inner .gnb > .menu > li > a.active::before,
-.header .inner .gnb > .menu > li > a:hover::before {
+
+.header .inner .gnb>.menu>li>a.active::before,
+.header .inner .gnb>.menu>li>a:hover::before {
   visibility: visible;
   opacity: 1;
   background: #dcbe96;
@@ -133,7 +141,8 @@
 .header .inner .log {
   gap: 10px;
 }
-.header .inner .log > li > a {
+
+.header .inner .log>li>a {
   display: block;
   font-size: 14px;
   font-weight: 500;
@@ -143,7 +152,7 @@
   transition: all 0.4s;
 }
 
-.header .inner .log > li > a:hover {
+.header .inner .log>li>a:hover {
   border: 2px solid #dcbe96;
   background: radial-gradient(circle, #f0e0a2 0%, #b59975 100%);
 }

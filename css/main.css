@@ -1,6 +1,7 @@
 .mainVisual {
   position: relative;
 }
+
 .mainVisual .inner {
   position: absolute;
   top: 50%;
@@ -14,10 +15,12 @@
   height: 700px;
   width: 100%;
 }
+
 .mainVisual .slide .visual_sl {
   height: 700px;
   width: 100%;
 }
+
 .mainVisual .slide .visual_sl .vi_tit {
   position: absolute;
   top: 30%;
@@ -25,6 +28,7 @@
   transform: translate(-50%, -50%);
   z-index: 999;
 }
+
 .mainVisual .slide .sl_itm01::before {
   content: "";
   position: absolute;
@@ -36,6 +40,7 @@
   background: url(../img/main_v_casino.png) no-repeat center center/contain;
   z-index: 998;
 }
+
 .mainVisual .slide .sl_itm02::before {
   content: "";
   position: absolute;
@@ -55,7 +60,7 @@
   transform: translate(-50%, 85%);
 }
 
-.mainVisual .slide .slick-dots > li {
+.mainVisual .slide .slick-dots>li {
   position: relative;
   display: inline-block;
   width: 20px;
@@ -88,6 +93,164 @@
   transition: 3.5s;
 }
 
-.mainVisual .slide .slick-dots > li button {
+.mainVisual .slide .slick-dots>li button {
   display: none;
+}
+
+
+.gameLink .inner .fl_game {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.gameLink .inner .fl_game .g_lik {
+
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+  border: 2px solid #dcbe96;
+  overflow: hidden;
+
+  cursor: pointer;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.4s;
+}
+
+.gameLink .inner .fl_game .casino_link {
+  background-image: url(../img/livecasino.jpeg);
+}
+
+.gameLink .inner .fl_game .casino_link:hover {
+  background-size: 110%;
+}
+
+.gameLink .inner .fl_game .slot_link {
+  background-image: url(../img/slotgame.jpeg);
+}
+
+.gameLink .inner .fl_game .slot_link:hover {
+  background-size: 110%;
+}
+
+.gameLink .inner .fl_game .g_lik .lik_desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.gameLink .inner .fl_game .g_lik .lik_desc span {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  transition: 0.4s;
+}
+
+.gameLink .inner .fl_game .g_lik:hover .lik_desc {
+  bottom: calc(0 - 50px);
+
+
+}
+
+.gameLink .inner .fl_game .g_lik:hover .lik_desc span {
+  color: #dcbe96;
+  padding: 50px 0;
+}
+
+.gameLink .inner .fl_game .g_lik .lik_desc span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #dcbe96;
+  background: linear-gradient(90deg, transparent 0, #dcbe96 50%, transparent);
+}
+
+.mainCustomer .cus_fl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainCustomer .cus_fl .cus_itm {
+  border-bottom: 1px solid #dcbe9630;
+  width: 400px;
+}
+
+.mainCustomer .cus_fl .cus_itm:nth-child(1) {
+  border-left: 1px solid #dcbe9630;
+}
+
+.mainCustomer .cus_fl .cus_itm:nth-child(2) {
+  border-left: 1px solid #dcbe9630;
+  border-right: 1px solid #dcbe9630;
+}
+
+.mainCustomer .cus_fl .cus_itm:nth-child(3) {
+  border-right: 1px solid #dcbe9630;
+}
+
+.mainCustomer .cus_fl .cus_itm .cus_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: url(../img/customer-header.jpg);
+
+  padding: 20px;
+}
+
+.mainCustomer .cus_fl .cus_itm .cus_header span {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  color: #dcbe96;
+}
+
+.mainCustomer .cus_fl .cus_itm .cus_header a {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.mainCustomer .cus_fl .cus_itm table tbody {
+  font-size: 14px;
+  font-weight: 300;
+
+}
+
+.mainCustomer .cus_fl .cus_itm table tbody tr:first-child td {
+  padding-top: 20px;
+}
+
+.mainCustomer .cus_fl .cus_itm table tbody tr:last-child td {
+  padding-bottom: 20px;
+}
+
+.mainCustomer .cus_fl .cus_itm table tbody td {
+  padding: 10px 0px 10px 20px;
+  line-height: 10px;
+}
+
+.mainCustomer .cus_fl .cus_itm table tbody td:nth-child(n+2) {
+  text-align: right;
+}
+
+.mainCustomer .cus_fl .cus_itm table tbody td:last-child {
+  padding-right: 20px;
+}
+
+.mainCustomer .cus_fl .cus_itm table tbody td em {
+  color: #dcbe96;
+  font-weight: 500;
 }

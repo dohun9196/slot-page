@@ -6,12 +6,25 @@
 .subpage_visual {
   padding-top: 100px;
   height: 400px;
+}
+
+.subpage_visual.ch_vis {
   background: url(../img/sub_visual01.jpg) no-repeat center center/cover;
 }
+
+.subpage_visual.re_vis {
+  background: url(../img/sub_visual04.jpg) no-repeat left center/cover;
+}
+
+.subpage_visual.no_vis {
+  background: url(../img/sub_visual06.jpg) no-repeat left center/cover;
+}
+
 .subpage_visual .inner {
   position: relative;
   height: 100%;
 }
+
 .subpage_visual .inner .sp-tit {
   position: absolute;
   top: 50%;
@@ -19,12 +32,15 @@
   transform: translate(-50%, -50%);
 
   text-align: center;
+  text-shadow: 0 0 1px #000;
 }
+
 .subpage_visual .inner .sp-tit h2 {
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 10px;
 }
+
 .subpage_visual .inner .sp-tit p {
   font-size: 16px;
   font-weight: 400;
@@ -47,12 +63,14 @@
   background: #dcbe9607;
   margin: 0 0 30px 0;
 }
+
 .form_sec .inner .charge_in label {
   display: inline-block;
   width: 100px;
   font-size: 20px;
   font-weight: 500;
   text-align: justify;
+  word-break: normal;
 }
 
 .form_sec .inner .charge_in select {
@@ -63,6 +81,7 @@
   display: block;
   background: #18191d;
 }
+
 .form_sec .inner .charge_in select option:checked {
   color: #dcbe96;
 }
@@ -91,11 +110,13 @@
 .form_sec .inner .charge_in .charge_money_btn {
   text-align: right;
   margin-top: 10px;
+
 }
 
 .form_sec .inner .charge_in .charge_money_btn button {
   border: 1px solid #dcbe9630;
   padding: 10px 20px;
+  text-shadow: 0 0 1px #00000050;
   transition: 0.4s;
 }
 
@@ -112,9 +133,10 @@
   background: #e22e2e;
 }
 
-.form_sec .inner .charge_in .charge_money_btn button ~ button {
+.form_sec .inner .charge_in .charge_money_btn button~button {
   margin-left: 10px;
 }
+
 .form_sec .inner .charge_in.ch_comment textarea {
   font-size: 14px;
   font-weight: 300;
@@ -128,6 +150,7 @@
 
   overflow: hidden;
 }
+
 .form_sec .inner .ch_req_btn {
   text-align: center;
 }
@@ -148,4 +171,179 @@
 .form_sec .inner .ch_req_btn button:hover {
   background: #dcbe96;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.ch_top_sec .inner .check_all form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ch_top_sec .inner .check_all form .le_ch {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.ch_top_sec .inner .check_all form .le_ch input {
+  width: 20px;
+  height: 20px;
+}
+
+.ch_top_sec .inner .check_all form .le_ch span {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.ch_top_sec .inner .check_all form .ri_ch {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.note_list_sec .inner,
+.record_list_sec .inner {
+  border: 1px solid #b59975;
+}
+
+.note_list_sec .inner input,
+.record_list_sec .inner input {
+  width: 17px;
+  height: 17px;
+}
+
+.note_list_sec .inner table thead,
+.record_list_sec .inner table thead {
+  background: #dcbe9607;
+  border-bottom: 1px solid #b5997530;
+}
+
+.note_list_sec .inner table thead th,
+.record_list_sec .inner table thead th {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 30px 0;
+}
+
+.note_list_sec .inner table thead th~th,
+.record_list_sec .inner table thead th~th {
+  border-left: 1px solid #b5997520;
+}
+
+.record_list_sec .inner table thead .re_table_ch {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding-left: 30px;
+  width: 170px;
+}
+
+.record_list_sec .inner table thead .re_table_ch span {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.record_list_sec .inner table thead .re_table_w_th {
+  width: 260px;
+}
+
+.record_list_sec .inner table thead .re_table_s_th {
+  width: 100px;
+}
+
+.record_list_sec .inner table thead .re_table_s_th.last_th {
+  text-align: center;
+}
+
+.record_list_sec .inner table tbody {
+  text-align: center;
+}
+
+.record_list_sec .inner table tbody .re_tb td {
+  font-size: 14px;
+  font-weight: 700;
+
+  padding: 10px 0;
+  border-bottom: 1px solid #b5997520;
+}
+
+.record_list_sec .inner table tbody .re_tb .on {
+  color: #dcbe96;
+  font-weight: 500;
+  /* box-shadow: inset 0 0 10px #b5997550; */
+}
+
+.record_list_sec .inner table tbody .re_tb td~td {
+  border-left: 1px solid #b5997520;
+}
+
+.record_list_sec .inner table tbody .re_tb td em {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1782FF;
+  margin-top: 5px;
+}
+
+.record_list_sec .inner table tbody .re_tb_d td {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 20px 0;
+  border-bottom: 1px solid #b5997520;
+}
+
+.record_list_sec .inner table tbody .re_tb_d .record_detail {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.record_list_sec .inner table tbody .re_tb_d .record_detail .r_d_w {
+  width: fit-content;
+}
+
+.record_list_sec .inner table tbody .re_tb_d .record_detail .r_d_s {
+  width: 150px;
+}
+
+.record_list_sec .inner table tbody .re_tb_d .record_detail span {
+  display: block;
+}
+
+.record_list_sec .inner table tbody .re_tb_d .record_detail span.last_sp {
+  width: 100px;
+  text-align: center;
+}
+
+.record_list_sec .inner table tbody .re_tb_d .record_detail em {
+  font-weight: 500;
+}
+
+.note_top_sec .inner .check_all .rf_no {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.note_list_sec .inner table thead .no_table_s_th {
+  width: 100px;
+}
+
+.note_list_sec .inner table thead .no_table_w_th {
+  width: 700px;
+}
+
+.note_list_sec .inner table thead .no_table_m_th {
+  width: 200px;
+}
+
+.note_list_sec .inner table tbody td {
+  text-align: center;
+  padding: 30px;
 }

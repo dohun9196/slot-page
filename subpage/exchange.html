@@ -1,212 +1,178 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>환전요청</title>
-    <link rel="stylesheet" href="../css/asset.css" />
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/subpage.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
 
-    <script
-      src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-      crossorigin="anonymous"
-    ></script>
-    <!-- slick -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>환전요청</title>
+  <link rel="stylesheet" href="../css/asset.css" />
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/subpage.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
 
-    <script src="../js/main.js"></script>
-  </head>
-  <body>
-    <div class="Wrap">
-      <div class="top_banner">
-        <div class="inner ellipsis">
-          <div class="rolling_bar">
-            <ul>
-              <li class="rol_li">
-                "충전과 환전시 정확한 정보를 입력하셔야 됩니다."
-              </li>
-              <li class="rol_li">
-                "은행 점검시간 23:50 ~ 00:10 까지 출금신청및 환전신청이
-                불가능합니다."
-              </li>
-              <li class="rol_li">
-                "게임 이용 시 불편함이 있으시면 고객센터로 문의 바랍니다."
-              </li>
-            </ul>
-          </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="../js/main.js"></script>
+</head>
+
+<body>
+  <div class="Wrap">
+    <div class="top_banner">
+      <div class="inner ellipsis">
+        <div class="rolling_bar">
+          <ul>
+            <li class="rol_li">
+              "충전과 환전시 정확한 정보를 입력하셔야 됩니다."
+            </li>
+            <li class="rol_li">
+              "은행 점검시간 23:50 ~ 00:10 까지 출금신청 및 환전신청이
+              불가능합니다."
+            </li>
+            <li class="rol_li">
+              "게임 이용 시 불편함이 있으시면 고객센터로 문의 바랍니다."
+            </li>
+          </ul>
         </div>
-      </div>
-      <!-- header -->
-      <header class="header">
-        <div class="inner">
-          <h1 class="logo">
-            <a href="/">
-              <!-- <img src="" alt="" /> -->
-              CASINO
-            </a>
-          </h1>
-          <nav class="gnb">
-            <ul class="menu ul_flex">
-              <li><a href="./charge.html">충전신청</a></li>
-              <li><a class="active" href="./exchange.html">환전신청</a></li>
-              <li><a href="">배팅기록</a></li>
-              <li><a href="">쪽지</a></li>
-              <li><a href="">공지사항</a></li>
-              <li><a href="">고객센터</a></li>
-              <li><a href="">마이페이지</a></li>
-            </ul>
-            <ul class="log ul_flex">
-              <li><a href="">LOG IN</a></li>
-              <li><a href="">SING UP</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <!-- main -->
-
-      <main>
-        <aside class="subpage_visual">
-          <div class="inner">
-            <div class="sp-tit">
-              <h2>환전 신청</h2>
-              <p>게임 이용을 위해 정확한 정보를 입력해 주세요</p>
-            </div>
-          </div>
-        </aside>
-
-        <section class="form_sec sec">
-          <div class="inner">
-            <form action="" method="post" onsubmit="return false;">
-              <div class="charge_in ch_phone">
-                <label for="phone">전화번호</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required="required"
-                  placeholder="전화번호를 입력하세요."
-                />
-              </div>
-              <div class="charge_in ch_money">
-                <div class="fl_le">
-                  <label for="amount">환전금액</label>
-                  <input
-                    type="number"
-                    id="amount"
-                    name="amount"
-                    required="required"
-                    placeholder="금액을 입력하세요."
-                  />
-                </div>
-                <div class="charge_money_btn">
-                  <button onclick="addAmount(1000000)">100만원</button>
-                  <button onclick="addAmount(500000)">50만원</button>
-                  <button onclick="addAmount(100000)">10만원</button>
-                  <button onclick="addAmount(10000)">1만원</button>
-                  <button onclick="resetAmount()" class="clear">초기화</button>
-                </div>
-              </div>
-              <div class="charge_in ch_bank">
-                <div class="fl_le ch_accountnumber">
-                  <label for="accountnumber">계좌번호</label>
-                  <input
-                    type="text"
-                    id="accountnumber"
-                    name="accountnumber"
-                    required="required"
-                    placeholder="계좌번호을 입력하세요."
-                  />
-                </div>
-                <div class="fl_ri">
-                  <label for="bank">은행명</label>
-                  <select name="bank" id="bnak">
-                    <option value="" class="opt_cle">
-                      은행명을 선택하세요
-                    </option>
-                    <option value="경남은행">경남은행</option>
-                    <option value="광주은행">광주은행</option>
-                    <option value="국민은행">국민은행</option>
-                    <option value="기업은행">기업은행</option>
-                    <option value="농협중앙회">농협중앙회</option>
-                    <option value="농협회원조합">농협회원조합</option>
-                    <option value="대구은행">대구은행</option>
-                    <option value="도이치은행">도이치은행</option>
-                    <option value="부산은행">부산은행</option>
-                    <option value="산업은행">산업은행</option>
-                    <option value="상호저축은행">상호저축은행</option>
-                    <option value="새마을금고">새마을금고</option>
-                    <option value="수협중앙회">수협중앙회</option>
-                    <option value="신한금융투자">신한금융투자</option>
-                    <option value="신한은행">신한은행</option>
-                    <option value="신협중앙회">신협중앙회</option>
-                    <option value="외환은행">외환은행</option>
-                    <option value="우리은행">우리은행</option>
-                    <option value="우체국">우체국</option>
-                    <option value="전북은행">전북은행</option>
-                    <option value="제주은행">제주은행</option>
-                    <option value="카카오뱅크">카카오뱅크</option>
-                    <option value="케이뱅크">케이뱅크</option>
-                    <option value="하나은행">하나은행</option>
-                    <option value="한국씨티은행">한국씨티은행</option>
-                    <option value="HSBC은행">HSBC은행</option>
-                    <option value="SC제일은행">SC제일은행</option>
-                  </select>
-                </div>
-              </div>
-              <div class="charge_in ch_player">
-                <label for="payer">출금자명</label>
-                <input
-                  type="text"
-                  id="payer"
-                  name="payer"
-                  required="required"
-                  placeholder="입급자명을 입력하세요."
-                />
-              </div>
-
-              <div class="charge_in ch_comment">
-                <label for="comment">코멘트:</label>
-                <textarea
-                  id="comment"
-                  name="comment"
-                  rows="4"
-                  cols="50"
-                  style="resize: none"
-                ></textarea>
-              </div>
-              <div class="ch_req_btn">
-                <button>환전요청</button>
-              </div>
-            </form>
-          </div>
-        </section>
-      </main>
-      <!-- footer -->
-      <footer class="footer">
-        <div class="inner">
-          <div class="f_logo">
-            <figure>
-              <img src="../img/GAME/ETC/footer_Logo.png" alt="" />
-            </figure>
-          </div>
-        </div>
-      </footer>
-      <div class="top_btn">
-        <a href="javascript:void(0)">UP</a>
       </div>
     </div>
-  </body>
+    <!-- header -->
+    <header class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="/">
+            <!-- <img src="" alt="" /> -->
+            CASINO
+          </a>
+        </h1>
+        <nav class="gnb">
+          <ul class="menu ul_flex">
+            <li><a href="">카지노</a></li>
+            <li><a href="">슬롯</a></li>
+            <li><a href="./charge.html">충전신청</a></li>
+            <li><a class="active" href="./exchange.html">환전신청</a></li>
+            <li><a href="./record.html">배팅기록</a></li>
+            <li><a href="./note.html">쪽지</a></li>
+            <li><a href="./notice.html">공지사항</a></li>
+            <li><a href="./customr.html">고객센터</a></li>
+            <li><a href="./mypage.html">마이페이지</a></li>
+          </ul>
+          <ul class="log ul_flex">
+            <li><a href="">LOG IN</a></li>
+            <li><a href="">SING UP</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- main -->
+
+    <main>
+      <aside class="subpage_visual ch_vis">
+        <div class="inner">
+          <div class="sp-tit">
+            <h2>환전신청</h2>
+            <p>게임 이용을 위해 정확한 정보를 입력해 주세요</p>
+          </div>
+        </div>
+      </aside>
+
+      <section class="form_sec sec">
+        <div class="inner">
+          <form action="" method="post" onsubmit="return false;">
+            <div class="charge_in ch_phone">
+              <label for="phone">전화번호</label>
+              <input type="tel" id="phone" name="phone" required="required" placeholder="전화번호를 입력하세요." />
+            </div>
+            <div class="charge_in ch_money">
+              <div class="fl_le">
+                <label for="amount">환전금액</label>
+                <input type="number" id="amount" name="amount" required="required" placeholder="금액을 입력하세요." />
+              </div>
+              <div class="charge_money_btn">
+                <button onclick="addAmount(1000000)">100만원</button>
+                <button onclick="addAmount(500000)">50만원</button>
+                <button onclick="addAmount(100000)">10만원</button>
+                <button onclick="addAmount(10000)">1만원</button>
+                <button onclick="resetAmount()" class="clear">초기화</button>
+              </div>
+            </div>
+            <div class="charge_in ch_bank">
+              <div class="fl_le ch_accountnumber">
+                <label for="accountnumber">계좌번호</label>
+                <input type="text" id="accountnumber" name="accountnumber" required="required"
+                  placeholder="계좌번호을 입력하세요." />
+              </div>
+              <div class="fl_ri">
+                <label for="bank">은행명</label>
+                <select name="bank" id="bnak">
+                  <option value="" class="opt_cle">
+                    은행명을 선택하세요
+                  </option>
+                  <option value="경남은행">경남은행</option>
+                  <option value="광주은행">광주은행</option>
+                  <option value="국민은행">국민은행</option>
+                  <option value="기업은행">기업은행</option>
+                  <option value="농협중앙회">농협중앙회</option>
+                  <option value="농협회원조합">농협회원조합</option>
+                  <option value="대구은행">대구은행</option>
+                  <option value="도이치은행">도이치은행</option>
+                  <option value="부산은행">부산은행</option>
+                  <option value="산업은행">산업은행</option>
+                  <option value="상호저축은행">상호저축은행</option>
+                  <option value="새마을금고">새마을금고</option>
+                  <option value="수협중앙회">수협중앙회</option>
+                  <option value="신한금융투자">신한금융투자</option>
+                  <option value="신한은행">신한은행</option>
+                  <option value="신협중앙회">신협중앙회</option>
+                  <option value="외환은행">외환은행</option>
+                  <option value="우리은행">우리은행</option>
+                  <option value="우체국">우체국</option>
+                  <option value="전북은행">전북은행</option>
+                  <option value="제주은행">제주은행</option>
+                  <option value="카카오뱅크">카카오뱅크</option>
+                  <option value="케이뱅크">케이뱅크</option>
+                  <option value="하나은행">하나은행</option>
+                  <option value="한국씨티은행">한국씨티은행</option>
+                  <option value="HSBC은행">HSBC은행</option>
+                  <option value="SC제일은행">SC제일은행</option>
+                </select>
+              </div>
+            </div>
+            <div class="charge_in ch_player">
+              <label for="payer">출금자명</label>
+              <input type="text" id="payer" name="payer" required="required" placeholder="출금자명을 입력하세요." />
+            </div>
+
+            <div class="charge_in ch_comment">
+              <label for="comment">코멘트:</label>
+              <textarea id="comment" name="comment" rows="4" cols="50" style="resize: none"></textarea>
+            </div>
+            <div class="ch_req_btn">
+              <button>환전요청</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="inner">
+        <div class="f_logo">
+          <figure>
+            <img src="../img/GAME/ETC/footer_Logo.png" alt="" />
+          </figure>
+        </div>
+      </div>
+    </footer>
+    <div class="top_btn">
+      <a href="javascript:void(0)">UP</a>
+    </div>
+  </div>
+</body>
+
 </html>

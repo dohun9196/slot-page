@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고객센터</title>
+    <link rel="stylesheet" href="../css/asset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/subpage.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <div class="Wrap">
+        <div class="top_banner">
+            <div class="inner ellipsis">
+                <div class="rolling_bar">
+                    <ul>
+                        <li class="rol_li">
+                            "충전과 환전시 정확한 정보를 입력하셔야 됩니다."
+                        </li>
+                        <li class="rol_li">
+                            "은행 점검시간 23:50 ~ 00:10 까지 출금신청 및 환전신청이
+                            불가능합니다."
+                        </li>
+                        <li class="rol_li">
+                            "게임 이용 시 불편함이 있으시면 고객센터로 문의 바랍니다."
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- header -->
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="/">
+                        <!-- <img src="" alt="" /> -->
+                        CASINO
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul class="menu ul_flex">
+                        <li><a href="">카지노</a></li>
+                        <li><a href="">슬롯</a></li>
+                        <li><a href="./charge.html">충전신청</a></li>
+                        <li><a href="./exchange.html">환전신청</a></li>
+                        <li><a href="./record.html">배팅기록</a></li>
+                        <li><a href="./note.html">쪽지</a></li>
+                        <li><a href="./notice.html">공지사항</a></li>
+                        <li><a class="active" href="./customr.html">고객센터</a></li>
+                        <li><a href="./mypage.html">마이페이지</a></li>
+                    </ul>
+                    <ul class="log ul_flex">
+                        <li><a href="">LOG IN</a></li>
+                        <li><a href="">SING UP</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- main -->
+
+        <main>
+            <aside class="subpage_visual no_vis">
+                <div class="inner">
+                    <div class="sp-tit">
+                        <h2>고객센터</h2>
+                        <p>24시간 답변해 드립니다.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="note_top_sec no-pa">
+                <div class="inner">
+                    <div class="check_all">
+                        <form action="" method="post" onsubmit="return false;">
+                            <div class="rf_no">
+                                <button class="all_btn re_btn">전체삭제</button>
+                                <button class="sel_del_btn2 re_btn">선택삭제</button>
+                                <button class="wri_btn re_btn">글쓰기</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="note_list_sec bt-50">
+                <div class="inner">
+                    <form action="" method="post" onsubmit="return false;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="no_table_s_th">
+                                        <input type="checkbox">
+                                    </th>
+                                    <th class="no_table_w_th">제목</th>
+                                    <th class="no_table_m_th">작성자</th>
+                                    <th class="no_table_m_th">작성일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">문의 내용이 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner">
+                <div class="f_logo">
+                    <figure>
+                        <img src="../img/GAME/ETC/footer_Logo.png" alt="" />
+                    </figure>
+                </div>
+            </div>
+        </footer>
+        <div class="top_btn">
+            <a href="javascript:void(0)">UP</a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // 초기에 배경색을 설정합니다.
+            updateBackgroundColor();
+
+            // 함수를 정의하여 배경색을 업데이트하는 코드를 묶습니다.
+            function updateBackgroundColor() {
+                // 모든 행의 배경색을 초기화합니다.
+                $("tbody tr").css("background-color", "");
+
+                if ($(".all_btn").hasClass("on")) {
+                    // 전체내역 버튼 클릭 시 모든 행에 배경색을 적용합니다.
+                    $("tbody tr:odd").css("background-color", "#dcbe9607");
+                } else if ($(".win_btn").hasClass("on")) {
+                    // 적중 버튼 클릭 시 적중 행에 배경색을 적용합니다.
+                    $(".tb_filter_w:odd").css("background-color", "#dcbe9607");
+                } else if ($(".lose_btn").hasClass("on")) {
+                    // 미적중 버튼 클릭 시 미적중 행에 배경색을 적용합니다.
+                    $(".tb_filter_l:odd").css("background-color", "#dcbe9607");
+                }
+            }
+
+            $(".re_btn").on("click", function () {
+                $(".re_btn").removeClass("on");
+                $(this).addClass("on");
+                // 버튼을 클릭할 때 배경색 업데이트 함수를 호출합니다.
+                updateBackgroundColor();
+            });
+
+            // 전체내역 버튼 클릭 시 모든 행을 보여줌
+            $(".all_btn").on("click", function () {
+                $(".tb_filter_w").show();
+                $(".tb_filter_l").show();
+                // 버튼을 클릭할 때 배경색 업데이트 함수를 호출합니다.
+                updateBackgroundColor();
+            });
+
+            // 적중 버튼 클릭 시 적중 행을 보여주고 미적중 행을 숨김
+            $(".win_btn").on("click", function () {
+                $(".tb_filter_w").show();
+                $(".tb_filter_l").hide();
+                // 버튼을 클릭할 때 배경색 업데이트 함수를 호출합니다.
+                updateBackgroundColor();
+            });
+
+            // 미적중 버튼 클릭 시 미적중 행을 보여주고 적중 행을 숨김
+            $(".lose_btn").on("click", function () {
+                $(".tb_filter_l").show();
+                $(".tb_filter_w").hide();
+                // 버튼을 클릭할 때 배경색 업데이트 함수를 호출합니다.
+                updateBackgroundColor();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
